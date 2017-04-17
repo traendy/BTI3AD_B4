@@ -13,12 +13,16 @@ public class Benchmark {
 
   private static void doBenchMarktestsF() {
    
-  
+  //TODO ADD Rekursiv
+    System.out.println("Rekursive Berechnung");
    for(int i = 0; i<=MAX_EXPONENT; i++){
      //Rekursiv
    }
+   counter.setCounter(0);
+   //TODO ADD Iterative
+   System.out.println("Iterative Berechnung");
    for(int i = 0; i<=MAX_EXPONENT; i++){
-     //Rekursiv
+     //Iterativ
    }
    
    /**
