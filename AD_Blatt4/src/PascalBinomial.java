@@ -1,3 +1,4 @@
+package pascal;
 import java.math.BigInteger;
 
 public class PascalBinomial {
@@ -31,7 +32,7 @@ public class PascalBinomial {
   
   private void count() {
     if(counter != null){
-        counter.counterUp(1);
+        counter.counterUp(BigInteger.ONE);
     }
   }
     

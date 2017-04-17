@@ -1,3 +1,7 @@
+package pascal;
+
+import java.math.BigInteger;
+
 // TODO: Auto-generated Javadoc
 /**
  * The Class Counter.
@@ -8,14 +12,14 @@
 public class Counter {
 
 	/** counter ist der Zaehlwert fuer den Counter. */
-	private int counter;
+	private BigInteger counter;
 
 	/**
 	 * Instantiates a new counter.
 	 */
 	// construtor
 	public Counter() {
-		counter = 0;
+		counter = BigInteger.ZERO;
 	}
 
 	/**
@@ -23,8 +27,8 @@ public class Counter {
 	 *
 	 * @return the counter
 	 */
-	public int getCounter() {
-		return counter;
+	public long getCounter() {
+		return counter.longValue();
 	}
 
 	/**
@@ -33,7 +37,7 @@ public class Counter {
 	 * @param counter
 	 *            the new counter
 	 */
-	public void setCounter(int counter) {
+	public void setCounter(BigInteger counter) {
 		this.counter = counter;
 	}
 
@@ -43,8 +47,8 @@ public class Counter {
 	 * @param add
 	 *            gibt die Zahl an, um wie viel hochgezaehlt werden soll.
 	 */
-	public void counterUp(int add) {
-		this.counter = counter + add;
+	public void counterUp(BigInteger add) {
+		this.counter = counter.add(add);
 	}
 
 }
