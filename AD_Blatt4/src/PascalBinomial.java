@@ -50,6 +50,7 @@ public class PascalBinomial {
       BigInteger denominator=BigInteger.ONE;
       
       for(BigInteger j=BigInteger.ONE; j.compareTo(k)<=0; j=j.add(BigInteger.ONE)){
+        count();
           numerator=numerator.multiply(j.add(n_minus_k));
           denominator=denominator.multiply(j);
           BigInteger gcd=numerator.gcd(denominator);
