@@ -27,7 +27,8 @@ public class PascalRekursiv {
 			return BigInteger.ONE;
 		}
 		count();
-		return pascalBerechnungRekursiv(zeile = zeile.subtract(BigInteger.ONE), spalte).add(pascalBerechnungRekursiv(zeile = zeile.subtract(BigInteger.ONE), spalte = spalte.subtract(BigInteger.ONE))) ;
+		return pascalBerechnungRekursiv(zeile = zeile.subtract(BigInteger.ONE), spalte).add(pascalBerechnungRekursiv(
+				zeile = zeile.subtract(BigInteger.ONE), spalte = spalte.subtract(BigInteger.ONE)));
 	}
 
 	public BigInteger pascalLoop(BigInteger gesuchteZeile) {
@@ -35,20 +36,8 @@ public class PascalRekursiv {
 		BigInteger ergebnis = null;
 
 		for (BigInteger spalte = BigInteger.ZERO; spalte.compareTo(zeile) <= 0; spalte = spalte.add(BigInteger.ONE)) {
-			// System.out.print(pascalBerechnungRekursiv(zeile, spalte) + " ");
 			ergebnis = pascalBerechnungRekursiv(zeile, spalte);
 		}
 		return ergebnis;
-		
 	}
-
-	// public static void main(String[] args) {
-	//
-	// for (int index = 1; index <= 32; index++) {
-	// pascalLoop(index);
-	// System.out.println("\nAufwand: " + aufwand + "\n");
-	//
-	// }
-	// }
-
 }
