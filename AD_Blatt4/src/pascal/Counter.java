@@ -12,14 +12,14 @@ import java.math.BigInteger;
 public class Counter {
 
 	/** counter ist der Zaehlwert fuer den Counter. */
-	private BigInteger counter;
+	private long counter;
 
 	/**
 	 * Instantiates a new counter.
 	 */
 	// construtor
 	public Counter() {
-		counter = BigInteger.ZERO;
+		counter = 0;
 	}
 
 	/**
@@ -28,7 +28,7 @@ public class Counter {
 	 * @return the counter
 	 */
 	public long getCounter() {
-		return counter.longValue();
+		return counter;
 	}
 
 	/**
@@ -37,7 +37,7 @@ public class Counter {
 	 * @param counter
 	 *            the new counter
 	 */
-	public void setCounter(BigInteger counter) {
+	public void setCounter(int counter) {
 		this.counter = counter;
 	}
 
@@ -47,8 +47,8 @@ public class Counter {
 	 * @param add
 	 *            gibt die Zahl an, um wie viel hochgezaehlt werden soll.
 	 */
-	public void counterUp(BigInteger add) {
-		this.counter = counter.add(add);
+	public void counterUp(int add) {
+		this.counter +=1;
 	}
 
 }

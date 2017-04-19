@@ -17,16 +17,17 @@ public class PascalRekursiv {
 
 	private void count() {
 		if (counter != null) {
-			counter.counterUp(BigInteger.ONE);
+			counter.counterUp(1);
 		}
 	}
 
 	public BigInteger pascalBerechnungRekursiv(BigInteger zeile, BigInteger spalte) {
+	  count();
 		if (spalte.compareTo(BigInteger.ONE) == 0 || spalte.compareTo(zeile) == 0) {
-			count();
+			
 			return BigInteger.ONE;
 		}
-		count();
+		
 		return pascalBerechnungRekursiv(zeile = zeile.subtract(BigInteger.ONE), spalte).add(pascalBerechnungRekursiv(
 				zeile = zeile.subtract(BigInteger.ONE), spalte = spalte.subtract(BigInteger.ONE)));
 	}

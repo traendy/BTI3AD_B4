@@ -17,7 +17,7 @@ public class PascalIterativ {
 
 	private void count() {
 		if (counter != null) {
-			counter.counterUp(BigInteger.ONE);
+			counter.counterUp(1);
 		}
 	}
 

@@ -32,7 +32,7 @@ public class PascalBinomial {
   
   private void count() {
     if(counter != null){
-        counter.counterUp(BigInteger.ONE);
+        counter.counterUp(1);
     }
   }
     
